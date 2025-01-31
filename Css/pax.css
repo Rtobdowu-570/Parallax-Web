@@ -128,7 +128,8 @@ a{
    @media screen and (max-width: 768px) {
 
     .border{
-         font-size: 18px;
+         font-size: 16px;
+         padding: 12px;
     }
     
      .section{
@@ -139,3 +140,5 @@ a{
          padding: 8px 16px;
       }
    }
+
+  
