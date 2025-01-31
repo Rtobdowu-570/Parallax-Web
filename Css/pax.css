@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.6em;
+}
+
+.ping1, .ping2, .ping3{
+    position: relative;
+    opacity: 0.8;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.ping1{
+    background-image: url('../img/city2.jpg');
+    min-height: 100%;
+}
+
+.ping2{
+    background-image: url('../img/city1.jpg');
+    min-height: 400px;
+}
+
+.ping3{
+    background-image: url('../img/city3.jpg');
+    min-height: 400px;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light{
+    background-color: #f9f9f9;
+    color: #343434;
+}
+
+.section-dark{
+    background-color: #282e34;
+    color: #f9f9f9;
+}
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #f9f9f9;
+    font-size: 25px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border{
+    background-color: #282e34;
+   padding: 15px;
+}
+
+.ptext .border.trans{
+    background-color: transparent;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #FBFEF9;
+    border: 1px solid #FBFEF9;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    transition:  0.5s;
+    margin-top: 15px;
+}
+
+.btn:hover{
+    background-color: #FBFEF9;
+    color: #282e34;
+}
+.btn::before, .btn::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: #FBFEF9;
+    transition: 1s ease;
+   }
+   
+   .button::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .button:hover::before, .button:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .button:active {
+    filter: brightness(.8);
+   }
+
+   @media screen and (max-width: 768px) {
+
+    .border{
+         font-size: 18px;
+    }
+    
+     .section{
+         padding: 20px;
+      }
+      .btn{
+         font-size: 16px;
+         padding: 8px 16px;
+      }
+   }
